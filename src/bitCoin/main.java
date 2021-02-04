@@ -46,7 +46,8 @@ public class main {
 
             String text = blockNumber + transaction + previousHash + nonce;
             String newHash = sha256(text);
-            if (newHash.startsWith("c", 0))
+            // THIS IS NETWORK DIFFICAULTY IN REAL A GOOD HASH MUST BEGIN WHITH 20 ZERO , U CAN CAHNGE THEM AND RIGHT GUESS 6.5 BITCOIN ?! CHEERS
+            if (newHash.startsWith("000000", 0))
 
             System.out.println(newHash);
             System.out.println(nonce);
