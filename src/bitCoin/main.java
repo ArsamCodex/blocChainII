@@ -48,6 +48,7 @@ public class main {
             String newHash = sha256(text);
             // THIS IS NETWORK DIFFICAULTY IN REAL A GOOD HASH MUST BEGIN WHITH 20 ZERO , U CAN CAHNGE THEM AND RIGHT GUESS 6.5 BITCOIN ?! CHEERS
             if (newHash.startsWith("000000", 0))
+                 fin.append(newHash);
 
             System.out.println(newHash);
             System.out.println(nonce);
